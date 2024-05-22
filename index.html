@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Book Store </h1>
+    <div id="numberOfBooksFormContainer">
+      <form id="numberOfBooksForm">
+        <label for="numberOfBooks">Number Of Books : </label>
+        <input type="number" id="numberOfBooks" required min="1" value=" ">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="bookFormContainer" style="display: none;" >
+      <form id="bookForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" required><br>
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" required><br>
+        <label for="authorEmail">Author Email:</label>
+        <input type="email" id="authorEmail" required><br>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    <table id="bookTable" style="display: none;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Author Name</th>
+          <th>Author Email</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- دى عشان الخلفية بس  -->
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
